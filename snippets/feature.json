@@ -1,0 +1,73 @@
+{
+    "feature": {
+        "prefix": "feature",
+        "body": [
+            "Feature: ${1:title}",
+            " In order to ${2:achievement}",
+            " As a ${3:type of user}",
+            " I want ${4:goal}",
+            " So that ${5:reason}",
+            " "
+        ],
+        "description": "Add cucumber new feature",
+        "scope": "text.gherkin.syntax"
+    },
+    "scenario": {
+        "prefix": "scenario",
+        "body": [
+            "Scenario: ${1:title}",
+            " Given ${2:precondition}",
+            "  When ${3:action}",
+            "  Then ${4:testable outcome}",
+            " "
+        ],
+        "description": "Add cucumber new \"Scenario\" ",
+        "scope": "text.gherkin.syntax"
+    },
+    "outline": {
+        "prefix": "outline",
+        "body": [
+            "Scenario Outline: ${1:title}",
+            " Given ${2:precondition}",
+            "  When ${3:action}",
+            "  Then ${4:testable outcome}",
+            " Examples: ",
+            " |  ${5:title}  | ",
+            " | ${6:value 1} | ",
+            " | ${7:value 2} | ",
+            " "
+        ],
+        "description": "Add cucumber new \"Scenario Outline\" ",
+        "scope": "text.gherkin.syntax"
+    },
+    "given": {
+        "prefix": "given",
+        "body": " Given ${1:precondition}",
+        "description": "Add cucumber \"Given\" Step",
+        "scope": "text.gherkin.syntax"
+    },
+    "then": {
+        "prefix": "then",
+        "body": "  Then ${1:testable outcome}",
+        "description": "Add cucumber \"When\" Step",
+        "scope": "text.gherkin.syntax"
+    },
+    "when": {
+        "prefix": "when",
+        "body": "  When ${1:action}",
+        "description": "Add cucumber \"When\" Step",
+        "scope": "text.gherkin.syntax"
+    },
+    "and": {
+        "prefix": "and",
+        "body": "   And ${1:addition}",
+        "description": "Add cucumber \"And\" Step",
+        "scope": "text.gherkin.syntax"
+    },
+    "but": {
+        "prefix": "but",
+        "body": "   But ${1:addition}",
+        "description": "Add cucumber \"But\" Step",
+        "scope": "text.gherkin.syntax"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "name": "gaji",
-    "displayName": "Gaji - Gherkin Formatter for Korean",
+    "displayName": "Gaji - Gherkin Feature Indentation for Korean",
     "description": "Gaji is a formatter for Gherkin(cucumberjs) features indentation for Korean.",
     "version": "0.0.1",
     "publisher": "ClareKang",
@@ -15,16 +15,40 @@
         "gherkin", "korean", "formatter", "cucumber", "feature"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.format"
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Gherkin Feature Indentation for Korean"
-            }
-        ]
+        "languages": [{
+            "id": "gherkin",
+            "aliases": [
+                "gherkin",
+                "feature",
+                "cucumber"
+            ],
+            "extensions": [
+                ".feature"
+            ],
+            "configuration": "./feature.configuration.json"
+        }],
+        "grammars": [{
+            "language": "gherkin",
+            "scopeName": "text.gherkin.syntax",
+            "path": "./syntaxes/feature.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "gherkin",
+            "path": "./snippets/feature.json"
+        }],
+        "keybindings": {
+            "command": "extension.format",
+            "key": "ctrl+shift+f",
+            "when": "editorTextFocus"
+        },
+        "commands": [{
+            "command": "extension.format",
+            "title": "Gherkin Feature Indentation for Korean"
+        }]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

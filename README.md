@@ -1,65 +1,34 @@
-# gaji README
+# Gaji - Gherkin Feature Indentation for Korean
 
-This is the README for your extension "gaji". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This extension is inspired by [gherkin-indent](https://github.com/Aravind00Kumar/gherkin-indent).
+This is an vscode extension for formatting Gherkin feature written by Korean.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- You will need to install Visual Studio Code 1.2.1 or higher.
+- From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX) select Install Extension, choose `Gaji` and reload Visual Studio Code.
+- **For Korean Coding Font** is required to use this extension.
+  - [D2 Coding Font](https://github.com/naver/d2codingfont)
+  - [Nanum Gothic Coding Font](https://github.com/naver/nanumfont)
+
+## How to use
+
+Apply `Gaji` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd-Shift-P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `Ctrl+Shift+F` (Windows, Linux) `Cmd+Shift+F` (OSX).
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+- `gaji.format`: Sets the indent value. (default is `4`). Note: `stepIndent` includes step name length.
 
-## Known Issues
+## Contributions
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Feel free to contribute by posting issues or pull requests on [Gaji](https://github.com/ClareKang/Gaji)
 
-## Release Notes
+---
 
-Users appreciate release notes as you update your extension.
+### References to write Gherkin
 
-### 1.0.0
+- [Gherkin](http://docs.behat.org/en/v3.0/guides/1.gherkin.html)
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Enjoy it 😎
