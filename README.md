@@ -1,5 +1,7 @@
 # Gaji - Gherkin Feature Indentation for Korean
 
+![](images/formatting.gif)
+
 This extension is inspired by [gherkin-indent](https://github.com/Aravind00Kumar/gherkin-indent).
 This is an vscode extension for formatting Gherkin feature written by Korean.
 
@@ -14,6 +16,9 @@ This is an vscode extension for formatting Gherkin feature written by Korean.
 ## How to use
 
 Apply `Gaji` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd-Shift-P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `Ctrl+Shift+F` (Windows, Linux) `Cmd+Shift+F` (OSX).
+
+- [more info - for English](docs/English.md)
+- [more info - for Korean](docs/Korean.md)
 
 ## Extension Settings
 
