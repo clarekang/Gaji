@@ -47,5 +47,5 @@ Gaji 는 Gherkin 문법으로 작성된 한글 `.feature`파일의 포맷팅을 
 
 #### 단축키
 
-- (Windows, Linux) `Ctrl+Shift+P`/(OSX) `Cmd-Shift-P` 를 눌러 command palette 에서 사용할 수 있습니다.
+- (Windows, Linux) `Ctrl+Shift+P`/(OSX) `Cmd+Shift+P` 를 눌러 command palette 에서 사용할 수 있습니다.
 - 혹은 단축키 (Windows, Linux) `Ctrl+Shift+f`/(OSX) `Cmd-Shift-F`를 통해서도 사용할 수 있습니다.

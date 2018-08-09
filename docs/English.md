@@ -56,4 +56,4 @@ Set your `editor.fontFamily` D2Coding or NanumGothicCoding.
 
 #### Shortcuts
 
-Apply `Gaji` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd-Shift-P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `Ctrl+Shift+F` (Windows, Linux) `Cmd+Shift+F` (OSX).
+Apply `Gaji` from the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX) to apply indentation for the `.feature` files or you can use key shortcut `Ctrl+Shift+F` (Windows, Linux) `Cmd+Shift+F` (OSX).
