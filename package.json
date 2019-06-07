@@ -9,46 +9,59 @@
     },
     "license": "SEE LICENSE IN <LICENSE>",
     "categories": [
-        "Formatters", "Other"
+        "Formatters",
+        "Other"
     ],
     "keywords": [
-        "gherkin", "korean", "formatter", "cucumber", "feature"
+        "gherkin",
+        "korean",
+        "formatter",
+        "cucumber",
+        "feature"
     ],
     "activationEvents": [
         "onCommand:extension.format"
     ],
     "main": "./out/extension",
     "contributes": {
-        "languages": [{
-            "id": "gherkin",
-            "aliases": [
-                "gherkin",
-                "feature",
-                "cucumber"
-            ],
-            "extensions": [
-                ".feature"
-            ],
-            "configuration": "./feature.configuration.json"
-        }],
-        "grammars": [{
-            "language": "gherkin",
-            "scopeName": "text.gherkin.syntax",
-            "path": "./syntaxes/feature.tmLanguage"
-        }],
-        "snippets": [{
-            "language": "gherkin",
-            "path": "./snippets/feature.json"
-        }],
+        "languages": [
+            {
+                "id": "gherkin",
+                "aliases": [
+                    "gherkin",
+                    "feature",
+                    "cucumber"
+                ],
+                "extensions": [
+                    ".feature"
+                ],
+                "configuration": "./feature.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gherkin",
+                "scopeName": "text.gherkin.syntax",
+                "path": "./syntaxes/feature.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "gherkin",
+                "path": "./snippets/feature.json"
+            }
+        ],
         "keybindings": {
             "command": "extension.format",
             "key": "ctrl+shift+f",
             "when": "editorTextFocus"
         },
-        "commands": [{
-            "command": "extension.format",
-            "title": "Gherkin Feature Indentation for Korean"
-        }]
+        "commands": [
+            {
+                "command": "extension.format",
+                "title": "Gherkin Feature Indentation for Korean"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -58,11 +71,11 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "tslint": "^5.8.0",
+        "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
     },
     "bugs": {
         "url": "https://github.com/ClareKang/Gaji/issues",
