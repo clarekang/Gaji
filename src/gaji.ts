@@ -2,6 +2,8 @@
 
 import { Step, gherkinSteps } from "./model";
 
+const emptyString = "__EMPTY__";
+
 export default class Gaji implements IGaji {
   private stepIndent: number;
 
@@ -64,7 +66,6 @@ export default class Gaji implements IGaji {
         );
       }
     });
-
     const newTable: string[][] = [];
     columns.forEach((column: ITableElement[], columnIndex: number) => {
       const max = this.getMaxLengthFromTable(column);
@@ -80,7 +81,6 @@ export default class Gaji implements IGaji {
         });
       }
     });
-
     return newTable.map(
       row => `${this.getPadding(this.stepIndent * 3)}${row.join("|")}|`,
     );
@@ -125,11 +125,17 @@ export default class Gaji implements IGaji {
   }
 
   private getTableRow(row: string): ITableElement[] {
-    return row.split("|").map((element: string, index: number) => ({
-      value: element.trim(),
-      length: this.getTextLength(element.trim()),
-      columnIndex: index,
-    }));
+    return row
+      .replace("\\|", emptyString)
+      .split("|")
+      .map((element: string, index: number) => {
+        const value = element === emptyString ? "\\|" : element.trim();
+        return {
+          value,
+          length: this.getTextLength(value),
+          columnIndex: index,
+        };
+      });
   }
 
   private getPadding(value: number): string {

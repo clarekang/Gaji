@@ -2,7 +2,7 @@
     "name": "gaji",
     "displayName": "Gaji - Gherkin Feature Indentation for Korean",
     "description": "Gaji is a formatter for Gherkin(cucumberjs) features indentation for Korean.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "ClareKang",
     "engines": {
         "vscode": "^1.25.0"
